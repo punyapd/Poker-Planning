@@ -1,0 +1,184 @@
+$primary: #7f56da;
+.login,
+.signup {
+  width: 100%;
+  height: 100vh;
+  background: #363740;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  padding: 0.2rem 0;
+}
+
+//login
+
+.form-component {
+  background-color: #fff;
+  width: 38rem;
+  // min-height: 58rem;
+  border-radius: 2rem;
+  padding: 4rem 3.2rem 4rem 3.2rem;
+
+  &-top {
+    text-align: center;
+
+    img {
+      height: 4.8rem;
+      width: 4.8rem;
+      display: block;
+      margin: auto;
+      @media (min-width: 600px) {
+        display: none;
+      }
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 1.7rem;
+      line-height: 3rem;
+      text-align: center;
+      letter-spacing: 0.3px;
+      margin-top: 2.4rem;
+      color: #252733;
+    }
+  }
+  &__bottomText {
+    margin-top: 3.2rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    text-align: center;
+    letter-spacing: 0.3px;
+
+    color: #9fa2b4;
+
+    span {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+
+      text-align: center;
+      letter-spacing: 0.2px;
+
+      color: $primary;
+      cursor: pointer;
+    }
+  }
+
+  &__instruction-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #9fa2b4;
+    margin-top: 1.2rem;
+    margin-bottom: 2.4rem;
+  }
+}
+
+//form-title
+
+.form-title {
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  text-align: center;
+  letter-spacing: 0.3px;
+  margin-top: 2.4rem;
+  color: #252733;
+}
+
+.form {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-top: 2.4rem;
+
+    label {
+      text-align: left;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      color: #9fa2b4;
+    }
+
+    input {
+      background: #fcfdfe;
+      border: 1px solid #d3d4d7;
+      border-radius: 8px;
+      padding: 1.6rem 0 1.6rem 1.2rem;
+
+      &:focus {
+        border: 1px solid #d3d4d7;
+
+        outline: none;
+      }
+    }
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.3px;
+      color: #4b506d;
+      opacity: 0.4;
+    }
+  }
+}
+
+//input field
+
+.custom-input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+//password-field
+
+.password-field {
+  position: relative;
+  width: 100%;
+
+  &__icon {
+    position: absolute;
+    top: 4.1rem;
+    right: 6px;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    span {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 13px;
+
+      text-align: right;
+      letter-spacing: 0.1px;
+      cursor: pointer;
+      color: #9fa2b4;
+    }
+  }
+}
+
+.remember-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 5px;
+}
+
+.add-ticket-form {
+  padding: 0rem 2rem;
+}

@@ -1,0 +1,123 @@
+$border-color: #ddd;
+.story-tabs {
+  margin-top: 2rem;
+  border: 1px solid $border-color;
+  text-transform: capitalize;
+  &-header {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+  }
+
+  &-titles {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+  }
+
+  &-title {
+    background-color: #fff;
+    display: inline-block;
+    padding: 10px;
+    color: #444;
+    cursor: pointer;
+    margin-left: 1px;
+    font-size: 1.6rem;
+
+    &--active {
+      color: #7f56da;
+      border-bottom: 2px solid #7f56da;
+    }
+  }
+
+  &-content {
+    background-color: #f5f5f5;
+    padding: 5px;
+    margin: 0;
+
+    i {
+      font-size: 1rem;
+    }
+    &__pending {
+      dl {
+        padding: 1rem;
+        dt {
+          display: flex;
+          gap: 1rem;
+          color: #555;
+          font-size: 1.6rem;
+          align-items: center;
+        }
+
+        dd {
+          margin-left: 2.6rem;
+          font-size: 1.2rem;
+          padding: 0.5rem 0;
+          text-transform: capitalize;
+        }
+      }
+    }
+    &__finished {
+      dl {
+        padding: 1rem;
+        dt {
+          display: flex;
+          gap: 1rem;
+          color: #555;
+          font-size: 1.6rem;
+          align-items: center;
+
+          .estimate {
+            height: 2rem;
+            width: 2rem;
+            color: white;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #7f56da;
+            margin-left: 2rem;
+          }
+        }
+
+        dd {
+          margin-left: 2.6rem;
+          font-size: 1.2rem;
+          padding: 0.5rem 0;
+        }
+      }
+    }
+  }
+}
+
+//no stories
+
+.empty-stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+
+  p {
+    font-size: 1.6rem;
+    color: #444;
+    @media (min-width: 768px) {
+      font-size: 1.8rem;
+    }
+  }
+  button {
+    padding: 1rem;
+    background-color: #7f56da;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+  }
+}

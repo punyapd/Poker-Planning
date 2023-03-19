@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+$body-bg: #d2d0dd;
+$white: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: $body-bg;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+.fa {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+// .avatar {
+//   height: 3.4rem;
+//   width: 3.4rem;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: #7f56da;
+//   border-radius: 50%;
+//   font-weight: 700;
+//   // font-size: 20px;
+//   color: #fff;
+// }
+
+.avatar {
+  font-size: 16px;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  background: #7f56da;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.avatar::after {
+  content: attr(data-label);
+  font-family: "Readex Pro", sans-serif;
+  color: #ffffff;
+}

@@ -1,0 +1,44 @@
+.form-wrapper {
+  width: 80%;
+  border-radius: 2rem;
+  display: flex;
+  background-color: green;
+  height: 100vh;
+  margin: auto;
+  &-left {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-right {
+    background-color: yellow;
+    width: 100%;
+    display: none;
+
+    @media (min-width: 600px) {
+      display: block;
+    }
+
+    &__figure {
+      height: 100%;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,237 @@
+.session {
+  width: 90%;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 1rem;
+
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    align-items: flex-start;
+    text-transform: capitalize;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 2rem;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+
+    &-item {
+      padding: 1rem;
+      border: 1px solid #ddd;
+      display: flex;
+      gap: 0.5rem;
+      background-color: #7f56da;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border-radius: 0.5rem;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+  //style for sesson body part
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 2rem;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    &__left {
+      width: 100%;
+      @media (min-width: 768px) {
+        width: 60%;
+      }
+    }
+
+    &__right {
+      width: 100%;
+      @media (min-width: 768px) {
+        width: 40%;
+      }
+    }
+  }
+
+  .add-next {
+    background-color: #7f56da;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: none;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+}
+
+//voting box style
+.voting-box {
+  border: 1px solid #ddd;
+  background-color: #fff;
+
+  &-header {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+  }
+
+  &-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  &__item {
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    width: 15%;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.3s all;
+    &:hover {
+      background-color: #7f56da;
+      color: white;
+    }
+    span {
+      font-size: 1.4rem;
+      @media (min-width: 768px) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+//style for members sectio in session page.
+.session-members {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  &-header {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+  }
+
+  &-body {
+    &__list {
+      padding: 0.5rem;
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+
+        transition: 0.4s ease;
+        &:hover {
+          background-color: #f5f5f5;
+        }
+        span {
+          font-size: 1.8rem;
+          font-weight: 500;
+        }
+
+        &__userinfo {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+//style for action section in session page.
+
+.session-action {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  &-header {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+  }
+
+  &-body {
+    button {
+      background-color: #7f56da;
+      width: 100%;
+      padding: 1rem;
+      color: white;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+//style for result container
+
+.session-result-container {
+  background-color: #fff;
+  width: 100%;
+  table {
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 1.8rem;
+    caption {
+      font-size: 1.8rem;
+    }
+    th {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 1rem;
+    }
+
+    td {
+      border: 1px solid #ddd;
+      padding: 1rem;
+    }
+  }
+}
