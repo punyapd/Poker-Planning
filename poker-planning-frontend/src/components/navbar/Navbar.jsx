@@ -36,7 +36,9 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <Avatar letter={JSON.parse(getKey("userData")).name.charAt(0)} />
+              <Avatar
+                letter={JSON.parse(getKey("userData"))?.name?.charAt(0)}
+              />
               <span className="nav-links" onClick={click ? handleClick : null}>
                 {JSON.parse(getKey("userData")).name}
               </span>
